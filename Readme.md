@@ -1,6 +1,6 @@
 SmartCar API V0.01
 
-The smartCar Api was build in javascipt using azure functions core tools in version 4
+The smartCar Api was build in javascipt using azure functions core tools in version 4.
 
 Below you could find:
  - Source code for SmartCar Api
@@ -13,5 +13,8 @@ Pending tasks
 - Add linters to scan the code and detect vulnerabilities like SQL inyection
 - Create a CI/CD for the code deployment
 - Optimize the code to re-use code.
+- Add http helpers to cover all the possible incomming issues from GM API.
+- For the sensitive data we could implement queues or service buses to keep store the data is something goes wrong.
+- Implement logs for each step throught the api flow to keep track all the consumptions to SmartCar and GM API.       
 
 
