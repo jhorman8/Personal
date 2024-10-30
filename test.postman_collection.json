@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "5a7dbd68-fbea-442f-a332-9f32caa1cd8b",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18810260"
+	},
+	"item": [
+		{
+			"name": "GM",
+			"item": [
+				{
+					"name": "/getSecurityStatusService",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"responseType\": \"JSON\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://gmapi.azurewebsites.net/getSecurityStatusService",
+							"protocol": "http",
+							"host": [
+								"gmapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"getSecurityStatusService"
+							]
+						},
+						"description": "Generated from cURL: curl http://gmapi.azurewebsites.net/getVehicleInfoService\n-X POST\n-H 'Content-Type: application/json'\n-d '{\"id\": \"1234\", \"responseType\": \"JSON\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "getEnergyService",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"responseType\": \"JSON\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://gmapi.azurewebsites.net/getEnergyService",
+							"protocol": "http",
+							"host": [
+								"gmapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"getEnergyService"
+							]
+						},
+						"description": "Generated from cURL: curl http://gmapi.azurewebsites.net/getVehicleInfoService\n-X POST\n-H 'Content-Type: application/json'\n-d '{\"id\": \"1234\", \"responseType\": \"JSON\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "actionEngineService",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\": \"1234\",\r\n\"command\": \"STOP_VEHICLE\",\r\n\"responseType\": \"JSON\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://gmapi.azurewebsites.net/actionEngineService",
+							"protocol": "http",
+							"host": [
+								"gmapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"actionEngineService"
+							]
+						},
+						"description": "Generated from cURL: curl http://gmapi.azurewebsites.net/getVehicleInfoService\n-X POST\n-H 'Content-Type: application/json'\n-d '{\"id\": \"1234\", \"responseType\": \"JSON\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleInfoService",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\": \"1234\", \"responseType\": \"JSON\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://gmapi.azurewebsites.net/getVehicleInfoService",
+							"protocol": "http",
+							"host": [
+								"gmapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"getVehicleInfoService"
+							]
+						},
+						"description": "Generated from cURL: curl http://gmapi.azurewebsites.net/getVehicleInfoService\n-X POST\n-H 'Content-Type: application/json'\n-d '{\"id\": \"1234\", \"responseType\": \"JSON\"}'"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Smart",
+			"item": [
+				{
+					"name": "getVehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://smartapi1.azurewebsites.net/api/vehicles/:id",
+							"protocol": "https",
+							"host": [
+								"smartapi1",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "123123123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVehiclesDoors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://smartapi1.azurewebsites.net/api/vehicles/:id/doors",
+							"protocol": "https",
+							"host": [
+								"smartapi1",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								":id",
+								"doors"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVehiclesFuel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://smartapi1.azurewebsites.net//api/vehicles/:id/fuel",
+							"protocol": "https",
+							"host": [
+								"smartapi1",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"",
+								"api",
+								"vehicles",
+								":id",
+								"fuel"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVehiclesBattery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://smartapi1.azurewebsites.net/api/vehicles/:id/battery",
+							"protocol": "https",
+							"host": [
+								"smartapi1",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								":id",
+								"battery"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actionEngineService",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"action\": \"START_VEHICLE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://smartapi1.azurewebsites.net/api/vehicles/:id/engine",
+							"protocol": "https",
+							"host": [
+								"smartapi1",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								":id",
+								"engine"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1234"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl http://gmapi.azurewebsites.net/getVehicleInfoService\n-X POST\n-H 'Content-Type: application/json'\n-d '{\"id\": \"1234\", \"responseType\": \"JSON\"}'"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

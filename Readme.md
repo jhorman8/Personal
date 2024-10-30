@@ -2,7 +2,10 @@ SmartCar API V0.01
 
 The smartCar Api was build in javascipt using azure functions core tools in version 4
 
-you could find the code including the unit test, also you could find a postman collection to check all the enpoints created
+Below you could find:
+ - Source code for SmartCar Api
+ - Unit test files
+ - API Documentation in postman collection file.
 
 Pending tasks
 
